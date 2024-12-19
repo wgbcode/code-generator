@@ -7,7 +7,7 @@ import lombok.Data;
  */
 @Data
 public class MainTemplateConfig {
-    private String author;
-    private String outputText;
-    private boolean loop;
+    private String author = "yupi";
+    private String outputText = "输出结果";
+    private boolean loop = false;
 }
