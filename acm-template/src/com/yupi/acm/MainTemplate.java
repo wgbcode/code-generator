@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * ACM 输入模板（多数之和）
- * @author wuguangbin
+ * @author 吴廣彬
  */
 public class MainTemplate {
     public static void main(String[] args) {
@@ -26,7 +26,7 @@ public class MainTemplate {
                 sum += num;
             }
 
-            System.out.println("输出结果(测试）: " + sum);
+            System.out.println("总和=: " + sum);
         }
         scanner.close();
     }
