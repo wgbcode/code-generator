@@ -11,7 +11,7 @@ public class MetaManager {
     // 所以会存在延迟的情况。使用 volatile 后，每次变量读写都是直接对共享内存进行操作
     private static volatile Meta meta;
 
-    public static Meta getMeta() {
+    public static Meta getMetaObject() {
         // 如果已经初始化，就不加锁了。加锁会很影响性能
         if (meta == null) {
             // 多线程开发，确保下面的代码在同一时间只能有一个线程能执行

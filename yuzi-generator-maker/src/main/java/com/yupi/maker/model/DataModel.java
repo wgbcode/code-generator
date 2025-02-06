@@ -11,4 +11,4 @@ public class DataModel {
     private String author = "yupi";
     private String outputText = "输出结果";
     private boolean loop = false;
-}
+};
