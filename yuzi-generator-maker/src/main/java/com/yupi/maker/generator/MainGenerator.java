@@ -88,8 +88,15 @@ public class MainGenerator {
 
         // 构建 jar 包
         JarGenerator.doGenerate(outputPath);
+
+        // 封装脚本
+        String shellOutputFilePath = outputPath + File.separator + "generator";
+        String jarName = String.format("%s-%s-jar-with-dependencies.jar", meta.getName(), meta.getVersion());
+        String jarPath = "target/" + jarName;
+        ScriptGenerator.doGenerate(shellOutputFilePath, jarPath);
     }
 }
+
 
 
 
