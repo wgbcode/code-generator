@@ -19,7 +19,7 @@ public class MainGenerator {
      * @throws IOException
      */
     public static void doGenerate(Object model) throws TemplateException, IOException {
-        String inputRootPath = "/Users/yupi/Code/yuzi-generator/yuzi-generator-demo-projects/acm-template-pro";
+        String inputRootPath = "D:/myProject/code-generator/code-generator-demo-projects/acm-template";
         String outputRootPath = "generated";
 
         String inputPath;

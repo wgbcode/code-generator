@@ -11,7 +11,7 @@ public class ListCommand implements Runnable {
 
     public void run() {
         // 输入路径
-        String inputPath = "/Users/yupi/Code/yuzi-generator/yuzi-generator-demo-projects/acm-template-pro";
+        String inputPath = "D:/myProject/code-generator/code-generator-demo-projects/acm-template";
         List<File> files = FileUtil.loopFiles(inputPath);
         for (File file : files) {
             System.out.println(file);
