@@ -19,7 +19,7 @@ public class MainGenerator {
      * @throws IOException
      */
     public static void doGenerate(Object model) throws TemplateException, IOException {
-        String inputRootPath = ".source/acm-template-pro";
+        String inputRootPath = ".source/acm-template";
         String outputRootPath = "generated";
 
         String inputPath;

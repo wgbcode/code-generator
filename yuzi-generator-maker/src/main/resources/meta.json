@@ -6,7 +6,7 @@
   "author": "Bin",
   "createTime": "2023-11-22",
   "fileConfig": {
-    "inputRootPath": ".source/acm-template-pro",
+    "inputRootPath": ".source/acm-template",
     "outputRootPath": "generated",
     "sourceRootPath":"D:/myProject/code-generator/code-generator-demo-projects/acm-template",
     "type": "dir",
