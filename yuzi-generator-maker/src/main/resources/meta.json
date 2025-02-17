@@ -3,11 +3,12 @@
   "description": "ACM 示例模板生成器",
   "basePackage": "com.yupi",
   "version": "1.0",
-  "author": "yupi",
+  "author": "Bin",
   "createTime": "2023-11-22",
   "fileConfig": {
-    "inputRootPath": "/Users/yupi/Code/yuzi-generator/yuzi-generator-demo-projects/acm-template-pro",
+    "inputRootPath": ".source/acm-template-pro",
     "outputRootPath": "generated",
+    "sourceRootPath":"D:/myProject/code-generator/code-generator-demo-projects/acm-template",
     "type": "dir",
     "files": [
       {
