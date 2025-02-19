@@ -1,16 +1,14 @@
 package com.yupi.maker;
 
-import com.yupi.maker.cli.CommandExecutor;
+import cn.hutool.extra.template.TemplateException;
+import com.yupi.maker.generator.main.MainGenerator;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.io.IOException;
+
 public class Main {
-    public static void main(String[] args) {
-//        args = new String[] { "generate","-l","-a","-o" };
-//        args = new String[] { "config"};
-//        args = new String[] { "list"};
-//        args = new String[] { };
-        CommandExecutor executor = new CommandExecutor();
-        executor.doExecutor(args);
+
+    public static void main(String[] args) throws TemplateException, IOException, InterruptedException, freemarker.template.TemplateException {
+        MainGenerator mainGenerator = new MainGenerator();
+        mainGenerator.doGenerate();
     }
 }

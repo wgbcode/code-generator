@@ -12,7 +12,7 @@ import java.io.Writer;
 
 public class DynamicFileGenerator {
 
-    public static void doGenerator(String inputPath, String outputPath,Object mode) throws IOException, TemplateException {
+    public static void doGenerate(String inputPath, String outputPath,Object mode) throws IOException, TemplateException {
         // new 出 Configuration 对象，参数为 FreeMarker 版本号
         Configuration configuration = new Configuration(Configuration.VERSION_2_3_32);
 

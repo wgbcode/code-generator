@@ -37,6 +37,6 @@ public class MainGenerator {
         // 第二步：使用动态生成替换掉部分文件
         String dynamicInputPath = projectPath + File.separator +  "yuizi-generator-maker/src/main/resources/templates/MainTemplate.java.ftl";
         String dynamicOutputPath = projectPath + File.separator +  "acm-template/src/com/yupi/acm/MainTemplate.java";
-        DynamicFileGenerator.doGenerator(dynamicInputPath,dynamicOutputPath,config);
+        DynamicFileGenerator.doGenerate(dynamicInputPath,dynamicOutputPath,config);
     }
 }
