@@ -16,6 +16,9 @@ public class GenerateCommand implements Callable<Integer> {
     // 获取参数 => 解析参数 => 参数赋值
     // 在执行线程之前，会先要求用户输入参数。用户输入的参数会赋值给 loop、author、outputText
     // 赋值完成后，才会去执行线程
+    @CommandLine.Option(names={"--needGit"},arity="0..1",description = "是否生成 .gitignore 文件",interactive = true,echo = true)
+    private boolean needGit = true;
+
     @CommandLine.Option(names={"-l","--loop"},arity="0..1",description = "是否循环",interactive = true,echo = true)
     private boolean loop;
 
